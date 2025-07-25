@@ -8,7 +8,6 @@ import numpy as np
 from triton.runtime.interpreter import (
     GridExecutor,
     _implicit_cvt,
-    RESERVED_KWS,
     interpreter_builder,
     InterpretedFunction,
 )
@@ -18,6 +17,7 @@ from typing import Tuple, List, Optional
 from contextlib import contextmanager
 from functools import wraps
 
+RESERVED_KWS = ["num_warps", "num_stages", "num_ctas", "enable_fp_fusion", "grid", "maxnreg"]
 
 ## Op
 
