@@ -11,7 +11,7 @@
             "program": "puzzles.py",
             "args": [
                 "-p",
-                "1"
+                "2"
             ],
             "env": {
                 "TRITON_INTERPRET": "2"
