@@ -370,10 +370,10 @@ def _create_masked_store(fn):
 
 def _create_make_range(fn):
     @wraps(fn)
-    def wrapper(start, stop):
+    def wrapper(ret_ty, start, stop):
         range_record = MakeRange(start=start, end=stop)
         record_builder.add_record(range_record)
-        return fn(start, stop)
+        return fn(ret_ty, start, stop)
 
     return wrapper
 

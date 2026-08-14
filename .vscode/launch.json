@@ -14,7 +14,7 @@
                 "2"
             ],
             "env": {
-                "TRITON_INTERPRET": "2"
+                "TRITON_INTERPRET": "1"
             },
             "justMyCode": false,
             "console": "integratedTerminal"
